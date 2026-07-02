@@ -1,213 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kiss N Destroy - Reader</title>
+<title>Kiss N Destroy | Chapter 001</title>
 
 <style>
+
 body{
-  margin:0;
-  background:black;
+    margin:0;
+    background:radial-gradient(circle at top,#2a0000 0%,#000 70%);
+    font-family:Arial,Helvetica,sans-serif;
 }
 
-/* MANGA IMAGES */
-img{
-  width:100%;
-  display:block;
+.reader{
+    max-width:900px;
+    margin:0 auto;
+    padding:40px 0 80px;
 }
 
-/* BLOOD EFFECT */
-.blood{
-  position:fixed;
-  top:0;
-  width:180px;
-  height:100%;
-  background:url("blood.png.png") no-repeat top center;
-  background-size:contain;
-  opacity:0.6;
-  pointer-events:none;
-  z-index:999;
+.page{
+    display:block;
+    width:100%;
+    margin:0 auto 40px auto;
+    box-shadow:0 0 25px rgba(0,0,0,.6);
 }
 
-.left{
-  left:0;
-  transform:scaleX(-1);
-  filter:hue-rotate(200deg) saturate(1.8);
+.navigation{
+    text-align:center;
+    padding:40px 0 60px;
 }
 
-.right{
-  right:0;
-  filter:hue-rotate(200deg) saturate(1.8);
+.navigation a{
+    color:white;
+    text-decoration:none;
+    border:1px solid #6b0000;
+    padding:12px 24px;
+    margin:0 10px;
+    transition:.2s;
 }
 
-/* NAV */
-.nav{
-  position:fixed;
-  bottom:10px;
-  width:100%;
-  text-align:center;
+.navigation a:hover{
+    background:#6b0000;
 }
 
-a{
-  color:white;
-  margin:10px;
-  text-decoration:none;
-  background:darkred;
-  padding:10px;
-}
 </style>
 
 </head>
 
 <body>
 
-<div class="blood left"></div>
-<div class="blood right"></div>
+<div class="reader">
 
-<!-- 001 CAPE -->
-<img src="001.png">
+<img class="page" src="002.png">
 
-<!-- 002 CHAPTER 1 INTRO -->
-<img src="002.png">
+<img class="page" src="003.png">
+<img class="page" src="004.png">
+<img class="page" src="005.png">
+<img class="page" src="006.png">
+<img class="page" src="007.png">
+<img class="page" src="008.png">
+<img class="page" src="009.png">
+<img class="page" src="010.png">
+<img class="page" src="011.png">
+<img class="page" src="012.png">
+<img class="page" src="013.png">
+<img class="page" src="014.png">
+<img class="page" src="015.png">
+<img class="page" src="016.png">
+<img class="page" src="017.png">
+<img class="page" src="018.png">
+<img class="page" src="019.png">
 
-<!-- CHAPTER 1 -->
-<img src="003.png">
-<img src="004.png">
-<img src="005.png">
-<img src="006.png">
-<img src="007.png">
-<img src="008.png">
-<img src="009.png">
-<img src="010.png">
-<img src="011.png">
-<img src="012.png">
-<img src="013.png">
-<img src="014.png">
-<img src="015.png">
-<img src="016.png">
-<img src="017.png">
-<img src="018.png">
-<img src="019.png">
+<div class="navigation">
 
-<!-- CHAPTER 2 INTRO -->
-<img src="020.png">
+<a href="index.html">Home</a>
 
-<!-- CHAPTER 2 -->
-<img src="021.png">
-<img src="022.png">
-<img src="023.png">
-<img src="024.png">
-<img src="025.png">
-<img src="026.png">
-<img src="027.png">
-<img src="028.png">
-<img src="029.png">
-<img src="030.png">
-<img src="031.png">
-<img src="032.png">
-<img src="033.png">
+<a href="chapter2.html">Next Chapter →</a>
 
-<!-- CHAPTER 3 INTRO -->
-<img src="034.png">
+</div>
 
-<!-- CHAPTER 3 -->
-<img src="035.png">
-<img src="036.png">
-<img src="037.png">
-<img src="038.png">
-<img src="039.png">
-<img src="040.png">
-<img src="041.png">
-<img src="042.png">
-<img src="043.png">
-<img src="044.png">
-<img src="045.png">
-<img src="046.png">
-<img src="047.png">
-<img src="048.png">
-<img src="049.png">
-<img src="050.png">
-<img src="051.png">
-<img src="052.png">
-<img src="053.png">
-
-<!-- CHAPTER 4 INTRO -->
-<img src="054.png">
-
-<!-- CHAPTER 4 -->
-<img src="055.png">
-<img src="056.png">
-<img src="057.png">
-<img src="058.png">
-<img src="059.png">
-<img src="060.png">
-<img src="061.png">
-<img src="062.png">
-<img src="063.png">
-<img src="064.png">
-<img src="065.png">
-<img src="066.png">
-<img src="067.png">
-<img src="068.png">
-<img src="069.png">
-<img src="070.png">
-<img src="071.png">
-<img src="072.png">
-<img src="073.png">
-
-<!-- CHAPTER 5 INTRO -->
-<img src="074.png">
-
-<!-- CHAPTER 5 -->
-<img src="075.png">
-<img src="076.png">
-<img src="077.png">
-<img src="078.png">
-<img src="079.png">
-<img src="080.png">
-<img src="081.png">
-<img src="082.png">
-<img src="083.png">
-<img src="084.png">
-<img src="085.png">
-
-<!-- CHAPTER 6 INTRO -->
-<img src="086.png">
-
-<!-- CHAPTER 6 -->
-<img src="087.png">
-<img src="088.png">
-<img src="089.png">
-<img src="090.png">
-<img src="091.png">
-<img src="092.png">
-<img src="093.png">
-<img src="094.png">
-<img src="095.png">
-<img src="096.png">
-<img src="097.png">
-<img src="098.png">
-
-<!-- CHAPTER 7 INTRO -->
-<img src="099.png">
-
-<!-- CHAPTER 7 -->
-<img src="100.png">
-<img src="101.png">
-<img src="102.png">
-<img src="103.png">
-<img src="104.png">
-<img src="105.png">
-<img src="106.png">
-<img src="107.png">
-<img src="108.png">
-<img src="109.png">
-<img src="110.png">
-
-<!-- NAV -->
-<div class="nav">
-<a href="index.html">HOME</a>
 </div>
 
 </body>
