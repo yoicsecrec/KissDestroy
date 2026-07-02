@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1</title>
+
+<style>
+body{
+  margin:0;
+  background:black;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+/* BLOOD */
+.blood{
+  position:fixed;
+  top:0;
+  width:180px;
+  height:100%;
+  background:url("blood.png.png") no-repeat top center;
+  background-size:contain;
+  opacity:0.6;
+  pointer-events:none;
+  z-index:999;
+}
+
+.left{left:0; transform:scaleX(-1); filter:hue-rotate(200deg) saturate(1.8);}
+.right{right:0; filter:hue-rotate(200deg) saturate(1.8);}
+
+/* NAV */
+.nav{
+  position:fixed;
+  bottom:10px;
+  width:100%;
+  text-align:center;
+}
+
+a{
+  color:white;
+  margin:10px;
+  text-decoration:none;
+  background:darkred;
+  padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="blood left"></div>
+<div class="blood right"></div>
+
+<!-- CHAPTER IMAGES -->
+<img src="003.png">
+<img src="004.png">
+<img src="005.png">
+<img src="006.png">
+<img src="007.png">
+<img src="008.png">
+<img src="009.png">
+<img src="010.png">
+<img src="011.png">
+<img src="012.png">
+<img src="013.png">
+<img src="014.png">
+<img src="015.png">
+<img src="016.png">
+<img src="017.png">
+<img src="018.png">
+<img src="019.png">
+
+<!-- NAV -->
+<div class="nav">
+<a href="index.html">HOME</a>
+<a href="chapter2.html">NEXT</a>
+</div>
+
+</body>
+</html>
