@@ -1,197 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Kiss N Destroy</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
-
-    background:#000;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-    overflow-x:hidden;
-
+  margin:0;
+  background:black;
+  color:white;
+  font-family:Arial;
+  text-align:center;
 }
 
-/* Blood */
-
+/* 🔴 BLOOD EFFECT */
 .blood{
-
-    position:fixed;
-    top:0;
-    width:140px;
-    height:100%;
-    background:url("blood.png.PNG") no-repeat top center;
-    background-size:contain;
-    opacity:.70;
-    pointer-events:none;
-    z-index:999;
-
+  position:fixed;
+  top:0;
+  width:180px;
+  height:100%;
+  background:url("blood.png.png") no-repeat top center;
+  background-size:contain;
+  opacity:0.6;
+  pointer-events:none;
+  z-index:999;
 }
 
+/* SOL */
 .left{
-
-    left:0;
-
+  left:0;
+  transform:scaleX(-1);
+  filter:hue-rotate(200deg) saturate(1.8);
 }
 
+/* SAĞ */
 .right{
-
-    right:0;
-    transform:scaleX(-1);
-
+  right:0;
+  filter:hue-rotate(200deg) saturate(1.8);
 }
 
-/* Main */
-
+/* ORTA İÇERİK */
 .container{
-
-    max-width:900px;
-    margin:auto;
-    padding:80px 30px;
-
+  max-width:800px;
+  margin:auto;
+  padding:40px 20px;
 }
 
-h1{
-
-    text-align:center;
-    font-size:60px;
-    margin-bottom:15px;
-
+a{
+  display:block;
+  margin:10px;
+  color:white;
+  text-decoration:none;
+  border:1px solid darkred;
+  padding:10px;
 }
 
-.subtitle{
-
-    text-align:center;
-    color:#bfbfbf;
-    font-size:20px;
-    margin-bottom:60px;
-
+a:hover{
+  background:darkred;
 }
-
-.card{
-
-    background:#111;
-    border:1px solid #333;
-    border-radius:10px;
-    padding:35px;
-    margin-bottom:35px;
-
-}
-
-.card h2{
-
-    margin-bottom:15px;
-
-}
-
-.card p{
-
-    color:#cfcfcf;
-    line-height:1.8;
-
-}
-
-.button{
-
-    display:inline-block;
-    margin-top:25px;
-    padding:14px 28px;
-    color:white;
-    text-decoration:none;
-    border:1px solid #700;
-    transition:.25s;
-
-}
-
-.button:hover{
-
-    background:#700;
-
-}
-
-.footer{
-
-    text-align:center;
-    color:#777;
-    margin-top:70px;
-    margin-bottom:20px;
-
-}
-
 </style>
 
 </head>
 
 <body>
 
+<!-- BLOOD LAYERS -->
 <div class="blood left"></div>
 <div class="blood right"></div>
 
 <div class="container">
 
-<h1>Kiss N Destroy</h1>
+<h1>KISS N DESTROY</h1>
 
-<div class="subtitle">
-Official Manga Website
-</div>
+<p>Isla Isabela’da vampirler, yarı vampirler ve ruhlar arasında geçen hikaye.</p>
 
-<div class="card">
+<hr>
 
-<h2>Read</h2>
+<h2>CHAPTERS</h2>
 
-<p>
+<a href="chapter1.html">Chapter 001</a>
+<a href="chapter2.html">Chapter 002</a>
+<a href="chapter3.html">Chapter 003</a>
+<a href="chapter4.html">Chapter 004</a>
+<a href="chapter5.html">Chapter 005</a>
+<a href="chapter6.html">Chapter 006</a>
+<a href="chapter7.html">Chapter 007</a>
 
-Read every chapter of Kiss N Destroy in high quality.
+<hr>
 
-</p>
+<a href="lore.html">LORE</a>
+<a href="https://x.com/yoicsec3" target="_blank">X (Twitter)</a>
 
-<a class="button" href="chapter1.html">
-
-Read Chapter 001
-
-</a>
-
-</div>
-
-<div class="card">
-
-<h2>Lore</h2>
-
-<p>
-
-Explore the history of Isla Isabela, the factions, the races, and the hidden events that shaped the world long before the story began.
-
-</p>
-
-<a class="button" href="https://yoicsecrec.github.io/kissndestroy/">
-
-Explore the Lore
-
-</a>
-
-</div>
-
-<div class="footer">
-
-By Yoichi (YoicSec/Rec)
-
-</div>
+<p>By Yoichi (YoicSec/Rec)</p>
 
 </div>
 
 </body>
-
 </html>
